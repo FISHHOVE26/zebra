@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZebraStripes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <table class="container">
+            <table>
+                <tr>
+                  <th>Name</th>
+                  <th>Bounces</th>
+                </tr>
+                <tr>
+                  <td>Tendai</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                    <td>Kudzai</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <td>Taurai</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>Nyika</td>
+                    <td>1000</td>
+                </tr>
+            </table>
+            <table class="two">
+                <tr>
+                  <th>Name</th>
+                  <th>Favourite Dish</th>
+                </tr>
+                <tr>
+                  <td>Tendai</td>
+                  <td>Sadza Madora</td>
+                </tr>
+                <tr>
+                    <td>Kudzai</td>
+                    <td>Sadza Chicken</td>
+                </tr>
+                <tr>
+                    <td>Taurai</td>
+                    <td>Gango</td>
+                </tr>
+            </table>
+        
+        </table>
+        <br>
+        <button onclick="maw()">ZebraUP</button>
+ 
+ <script>
+    function maw(){
+    let rows = document.getElementsByTagName("tr");
+    for(var i = 0; i<rows.length; i++){
+        if(i % 2 !==0){
+            rows[i].classList.add("zebraStripe");
+        }
+    }
+ }
+ 
+ </script>
+
+</body>
+</html>
